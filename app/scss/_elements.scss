@@ -1,0 +1,57 @@
+.clearfix:before, 
+.clearfix:after {
+    content: " ";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+
+body {
+	font: 100%/1.5 Cambria, Garamond, Georgia, Times, serif;
+	color: $dk-gray;
+	background:#fff;
+}
+a { 
+	text-decoration:none; 
+	color: $dk-blue;
+	-webkit-tap-highlight-color: $dk-blue;
+}
+a:hover {
+	color: $dk-orange;
+}
+
+::selection { background: $dk-blue; color:#fff; }
+
+h1 {
+    max-width: 940px;
+    height: 88px;
+    margin: 6px auto 0 auto;
+    font-size:48px;
+}
+
+img,
+iframe {
+    width: 100%;
+}
+
+.content-introduction {
+    max-width: 940px;
+    margin: 6px auto 26px auto;
+    padding-top: 20px;
+    border-top: 3px double $dk-yellow;
+
+    p {
+        text-transform: uppercase;
+        line-height: 1.1;
+        color: $md-gray;
+    }
+
+    p:first-child {
+        margin-bottom: 12px;
+        font-size: 26px;
+    }
+    p:last-child {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,29 @@
+.secondary {
+	background: $lt-tan;
+	border: 1px solid $dk-yellow;
+	border-left: none;
+	border-right: none;
+	padding: 1rem;
+}
+
+@media (min-width: $break-two) {
+
+
+.content {
+	max-width: 940px;
+	margin: 0 auto;
+	padding-bottom: 1.5rem;
+}
+
+.content-main {
+	float: left;	
+	width: 60%;
+	padding-right: 24px;
+	box-sizing: border-box;
+}
+
+.content-sub {
+	float: right;	
+	width: 40%;
+}
+}

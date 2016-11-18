@@ -1,0 +1,51 @@
+nav {
+	ul {
+		display: none; 
+		background: $md-gray;
+
+		@media (min-width: $break-one) {
+        	display: flex;
+        	background: $dk-blue;
+    	}
+	}
+	li {
+		padding: 4px 2px 4px 8px;
+		border-bottom: 1px solid #fff;
+
+		@media (min-width: $break-one) {
+        	padding: 8px;
+        	border: none;
+    	}
+
+		&:hover {
+			background: $dk-gray;
+		}
+
+		a {
+			color: #fff;
+			display: block;
+			width: 100%;
+
+			&:hover {
+				color: #fff;
+			}
+		}	
+	}
+	#pull {
+		display: block;
+		background: $dk-blue;
+		padding: 12px 0 0 12px;
+		height: 32px;
+		@media (min-width: $break-one) {
+        	display: none;
+    	}
+	}
+	#pull:after {
+		content: "";
+		background: url(../img/nav-icon.png) no-repeat;
+		background-size: cover;
+		width: 22px;
+		height: 22px;
+		display: inline-block;
+	}
+}
